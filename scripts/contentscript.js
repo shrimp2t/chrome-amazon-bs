@@ -110,7 +110,10 @@ jQuery(document).ready(function($) {
         background: '#78a809',
         color: '#fff'
     });
-    $('body').append(button);
+
+    if ( $('#zg-ordered-list').length ) {
+        $('body').append(button);
+    }
 
     function ajax(url) {
 		console.log( 'Ajax', url );
